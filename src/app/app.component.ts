@@ -13,6 +13,12 @@ export class AppComponent {
     { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public appMenu =[
+    {title : 'Accueil',url:'/home',icon:'home-outline'},
+    {title : 'Partager',url:'',icon:'share-social-outline'},
+    {title : 'Parametre',url: '',icon:'settings-outline'},
+    {title : 'Version Premuim',url:'',icon:'push-outline'},
+  ];
+  
   constructor() {}
 }

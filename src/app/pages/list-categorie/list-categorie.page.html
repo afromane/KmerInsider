@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div *ngFor="let p of listCategories" class="label" >
+      <ion-card >    
+        <ion-card-content>
+            <ion-item  [routerLink]="[p.url]" lines="none">
+            <img src= {{p.img}} class="img"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+      
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
